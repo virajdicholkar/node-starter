@@ -141,7 +141,7 @@
 		{
 			"id": "3da8c6bc-79d4-4429-b47d-7288d719f1de",
 			"key": "BASE_URL",
-			"value": "http://localhost:3000/example"
+			"value": "http://localhost:3000/examples"
 		}
 	],
 	"protocolProfileBehavior": {}
