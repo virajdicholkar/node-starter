@@ -20,7 +20,7 @@ export class ExampleController {
             .put('/:id', this.updateById)
             .delete('/:id', this.deleteById);
 
-        const commonRoute = '/example';
+        const commonRoute = '/examples';
         this.router.use(commonRoute, exampleRouter);
     }
 
