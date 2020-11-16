@@ -1,0 +1,37 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "Node starter kit to start any node application easily.",
+  "main": "build/server.js",
+  "scripts": {
+    "app-install": "npm install && npm run client:install",
+    "client:install": "cd client && npm install && cd ..",
+    "test": "mocha -r ts-node/register test/*.test.ts",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./server/server.ts",
+    "clean": "rimraf build",
+    "build": "npm run clean && npm install && tsc ",
+    "prod": "npm run build && node ./build/server.js",
+    "client:dev": "cd client && ng build --watch",
+    "client:prod": "cd client && ng build --prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mocha": "^8.0.3",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.2",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.1.28",
+    "@types/mongoose": "^5.5.6",
+    "@types/node": "^14.14.6"
+  }
+}

@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "48956c0f-c63b-48cb-befd-38a325876fe9",
+		"name": "Node starter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create example",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Story example\",\r\n    \"description\":\"This is new story.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}",
+					"host": [
+						"{{BASE_URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update example",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Story example\",\r\n    \"description\":\"This is new story.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/5fb2260c2696692cb4186cd8",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"5fb2260c2696692cb4186cd8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete example",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/5fb2260c2696692cb4186cd8",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"5fb2260c2696692cb4186cd8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/5fb2260c2696692cb4186cd8",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"5fb2260c2696692cb4186cd8"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1dc6cb06-346e-4526-a7d3-fab322f3a17c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "08e4de03-d226-42df-9b85-be714869cdbd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "3da8c6bc-79d4-4429-b47d-7288d719f1de",
+			"key": "BASE_URL",
+			"value": "http://localhost:3000/example"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
